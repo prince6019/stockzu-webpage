@@ -1,0 +1,106 @@
+.footer{
+    margin: 40px 0px;
+    padding: 70px 90px;
+    
+}
+    
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+}
+.col1, .col2{
+    max-width: 220px;
+    list-style-type: none;
+}
+.col1 li{
+    margin: 15px 0px;
+}
+.col2 li{
+    margin: 8px 0px;
+}
+.col3{
+    width: 400px;
+}
+.col3 form {
+    display: flex;
+    justify-content: space-between;
+}
+.col3 input{
+    height: 70px;
+    border-radius: 5px;
+    width: 100%;
+    margin-right: 10px;
+    /* border: none; */
+    border: 2px solid gray;
+    outline: none;
+}
+.col3 input ::placeholder{
+padding-left: 20px;
+}
+.col3 button{
+    height: 70px;
+    width: 150px;
+}
+
+.footerBottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerIcons{
+    display: flex;
+    align-items: center;
+}
+.footericon{
+    height: 20px;
+    width: 20px;
+    margin: 0px 10px;
+}
+
+.app-icons {
+    display: flex;
+    align-items: center;
+}
+
+.android {
+    width: 200px;
+}
+.apple {
+    width: 164px;
+}
+
+@media screen and (max-width: 991px) {
+    .footer{
+        padding: 0px;
+    }
+    .footerContent{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }    
+    .col3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .footerIcons , .app-icons{
+        margin: 0px;
+    }
+    
+}
+@media screen and (max-width : 582px) {
+    .footerBottom{
+        flex-direction: column;
+    }
+    .footerIcons{
+        margin-top: 20px;
+        justify-content: space-around;
+    }
+    .app-icon {
+        margin: 10px 0px;
+    }
+    .app-icons{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}

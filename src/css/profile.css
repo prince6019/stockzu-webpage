@@ -1,0 +1,18 @@
+.profile{
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+    justify-self: center;
+}
+.profile img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.profile p{
+    margin: 0px 0px;
+}
+.profile h2{
+    margin-bottom: 0px;
+}

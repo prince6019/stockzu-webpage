@@ -1,0 +1,27 @@
+.CarouselCard{
+    min-width: 500px;
+    border-radius: 0px 10px 10px 0px;
+    margin: 20px;
+    background-color: #EEEEFF;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.25);;
+    padding: 70px 20px;
+}
+.CarouselCard > h1{
+    margin-top:-30px;
+    padding: 0;
+    font-size: 3.1rem;
+}
+
+.CarouselCard >p {
+    margin: 2rem 0;
+}
+.CarouselCard button{
+    width: 200px;
+}
+
+@media screen and (max-width: 784px) {
+    .CarouselCard{
+        min-width: 300px;
+        padding: 30px 20px;
+    }
+}

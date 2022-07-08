@@ -1,0 +1,32 @@
+#carouselRow{
+    margin: 20px 0px;
+    padding: 30px;
+}
+#carouselRow > h1{
+    font-size: 3.1rem;
+    margin-bottom: 3rem;
+}
+.Row{
+    display: flex;
+    overflow-y:hidden ;
+    overflow-x: scroll;
+    flex-direction: row;
+}
+.Row::-webkit-scrollbar{
+    display: none;
+}
+.blackcard {
+    background-color: black;
+    color: white;
+}
+
+.blackcard button {
+    margin: 0px;
+    width: 200px;
+}
+
+@media screen and (max-width: 784px) {
+    #carouselRow >h1{
+        font-size: 2.1rem;
+    }
+}

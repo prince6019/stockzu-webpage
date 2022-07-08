@@ -1,0 +1,33 @@
+#team{
+    margin-bottom: 12rem;
+}
+#team >h1{
+    font-size: 3.1rem;
+    /* margin-bottom: 12rem; */
+    font-weight: 800;
+}
+
+.teamTitle{
+    padding: 30px;
+    text-align: center;
+}
+.teamProfiles{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+@media screen and (max-width : 991px) {
+    .teamProfiles{
+        grid-template-columns: repeat(2,auto);
+    }
+    
+}
+
+@media screen and (max-width:764px) {
+    .teamProfiles{
+        grid-template-columns: repeat(1,auto);
+    }
+    #team >h1{
+        font-size: 2.1rem;
+    }
+}

@@ -1,0 +1,74 @@
+#home{
+    margin-top: 6rem;
+}
+.homeSection{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+.homeCard1 >h1  , .homeCard2 >h1{
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.1rem;
+}
+.homeSection > img{
+    height: 35rem;
+    width: 60%;
+    object-fit: contain;
+}
+.homeCard1{
+    width: 35%;
+}
+.homeCard1 button{
+    width: 60%;
+}
+.homeCard2{
+    width: 45%;
+}
+.homeCard2 button{
+    width: 40%;
+}
+.homeCard2 h5{
+    margin: 0;
+    font-weight: 700;
+}
+.blackButton{
+    height: 50px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 3px;
+    border: none;
+}
+.whiteButton{
+    height: 50px;
+    background-color:#EEEEFF;
+    color: black;
+    border-radius: 3px;
+    border: none;
+    margin-left: 20px;
+}
+
+@media screen  and (max-width : 991px) {
+    .homeSection{
+        flex-direction: column-reverse;
+    }
+    .homesection2{
+        flex-direction: column;
+    }
+    .homeCard1,.homeCard2{
+        margin-top: 30px;
+        width: 60%;
+
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .homeCard1 , .homeCard2{
+        text-align: center;
+        width: 100%;
+    }
+}
+

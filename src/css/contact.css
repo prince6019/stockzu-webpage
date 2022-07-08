@@ -1,0 +1,81 @@
+#contact{
+    display: flex;
+    background-color: black;
+    color: white;
+    margin: 30px 0px;
+    padding: 70px 50px;
+    justify-content: space-between;
+}
+#contact > img{
+    height: 35rem;
+    width: 60%;
+    object-fit: contain;
+}
+
+.contactContent{
+    width: 40%;
+}
+.contactContent h4{
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+.contactContent h1{
+    font-size: 3.1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+.contactContent p{
+    color: gray;
+    margin-bottom: 1.5rem;
+}
+
+.contactForm input{
+    height: 3rem;
+    background-color: black;
+    border: none;
+    /* border: 1px solid white; */
+    border: 1px solid gray;
+    padding: 0.5rem;
+}
+.formInput{
+    display: flex;
+    justify-content: space-between;
+}
+.emailInput{
+    width: 60%;
+    margin-left: 1.5rem;
+}
+.userInput{
+    width: 30%;
+}
+#formArea{
+    background-color: black;
+    color: gray;
+    padding: 1rem;
+    margin: 2rem 0rem;
+    width: 100%;
+}
+.contactForm button{
+    width: 30%;
+    position: relative;
+    left: 35%;
+}
+
+@media screen and (max-width: 991px) {
+ #contact{
+    flex-direction: column;
+    align-items: center;
+ }   
+ .contactContent{
+    width: 100%;
+    margin-top: 30px;
+ }
+ .contactContent h4{
+    font-size: 1.2rem;
+    /* margin-bottom: 0; */
+}
+.contactContent h1{
+    font-size: 2.1rem;
+ 
+}
+}

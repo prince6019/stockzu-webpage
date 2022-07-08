@@ -1,0 +1,79 @@
+#login{
+    display: flex;
+    background-color: black;
+    color: white;
+    margin: 30px 0px;
+    padding: 30px 10px;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+.loginImg{
+    height: 40rem;
+    width: 40rem;
+    object-fit: contain;
+    
+}
+.loginTable{
+    width: 30%;
+    padding: 30px;
+}
+.loginTable >h1{
+    font-size: 3.1rem;
+    margin: 0;
+}
+.loginTable > h4{
+    font-size: 1.5rem;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+.loginForm >label{
+    color: grey;
+}
+
+.loginForm input{
+    background-color: black;
+    width: 50%;
+    margin: 20px 0px;
+    border: none;
+    color: white;
+    outline: none;
+}
+.loginForm button{
+    margin: 0;
+    width: 35%;
+}
+.loginForm a{
+color: gray;    
+text-decoration: none;
+margin-top: 10px;
+margin-left: 10px;
+}
+
+@media screen and (max-width :991px){
+   #login{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.loginTable{
+    width: 70%;
+    margin-top: 30px;
+}
+}
+
+@media screen and (max-width:784px) {
+    .loginTable{
+        width: 100%;
+    }
+    .loginImg{
+        display: none;
+    }
+    .loginTable>h1{
+        font-size: 2.1rem;
+    }
+    .loginTable >h4{
+        margin-top: 10px;
+    }
+}
